@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
     <queries>
         <intent>
             <action android:name="android.intent.action.TTS_SERVICE" />
@@ -9,8 +11,8 @@
     </queries>
 
     <application
-        android:allowBackup="true"
         android:name=".WorkOutApp"
+        android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -19,6 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme._7MinWorkoutApp"
         tools:targetApi="31">
+        <activity
+            android:name=".Userprofileactivity"
+            android:exported="false" />
         <activity
             android:name=".HistoryActivity"
             android:exported="false" />

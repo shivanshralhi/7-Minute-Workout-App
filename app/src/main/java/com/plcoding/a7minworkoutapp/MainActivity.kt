@@ -29,6 +29,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
+        binding?.flUserSettings?.setOnClickListener {
+            startActivity(Intent(this, UserPreferencesActivity::class.java))
+        }
+
 
 
     }

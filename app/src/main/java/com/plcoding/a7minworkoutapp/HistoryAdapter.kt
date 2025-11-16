@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.plcoding.a7minworkoutapp.databinding.ItemHistoryLayoutBinding
+import java.util.ArrayList
 
 class HistoryAdapter(private val item : ArrayList<String>):RecyclerView.Adapter<HistoryAdapter.ViewHolder>(){
 

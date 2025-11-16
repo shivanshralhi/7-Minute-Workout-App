@@ -37,10 +37,40 @@
             android:textStyle="bold"/>
     </FrameLayout>
     <FrameLayout
+        android:id="@+id/flUserSettings"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/item_circular_color_accent_background"
+        app:layout_constraintTop_toBottomOf="@id/flStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_user"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvUserSettingsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="User Profile"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/flUserSettings"
+        app:layout_constraintStart_toStartOf="@id/flUserSettings"
+        app:layout_constraintEnd_toEndOf="@id/flUserSettings" />
+
+    <FrameLayout
         android:id="@+id/flBMI"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        app:layout_constraintTop_toBottomOf="@id/flStart"
+        app:layout_constraintTop_toBottomOf="@id/flUserSettings"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/flHistory"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,7 +101,7 @@
         android:id="@+id/flHistory"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        app:layout_constraintTop_toBottomOf="@id/flStart"
+        app:layout_constraintTop_toBottomOf="@id/flUserSettings"
         app:layout_constraintStart_toEndOf="@id/flBMI"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -42,8 +42,8 @@
         android:layout_height="100dp"
         android:background="@drawable/item_circular_color_accent_background"
         app:layout_constraintTop_toBottomOf="@id/flStart"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/flBMI"
+        app:layout_constraintEnd_toEndOf="@id/flBMI"
         android:layout_marginTop="20dp">
 
         <ImageView
@@ -127,5 +127,36 @@
         app:layout_constraintEnd_toEndOf="@id/flHistory"
         app:layout_constraintStart_toStartOf="@id/flHistory"
         app:layout_constraintTop_toBottomOf="@id/flHistory"/>
+    <!-- Chatbot Button -->
+    <FrameLayout
+        android:id="@+id/flChatbot"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/item_circular_color_accent_background"
+        app:layout_constraintTop_toBottomOf="@id/flStart"
+        app:layout_constraintStart_toStartOf="@id/flHistory"
+        app:layout_constraintEnd_toEndOf="@id/flHistory"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_chatbot"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvChatbot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="AI Coach"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/flChatbot"
+        app:layout_constraintStart_toStartOf="@id/flChatbot"
+        app:layout_constraintEnd_toEndOf="@id/flChatbot" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

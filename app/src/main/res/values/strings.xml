@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">7MinWorkoutApp</string>
     <string name="image">start image</string>
+    <string name="ApiKey">AIzaSyBFAHclD4Os4n7hxo9ULl6y43pwAPjMl08</string>
 
     <string-array name="body_types">
         <item>Lean</item>

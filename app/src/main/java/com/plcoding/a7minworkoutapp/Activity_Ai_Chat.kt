@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.lifecycle.lifecycleScope
@@ -20,7 +21,7 @@ class Activity_Ai_Chat : AppCompatActivity() {
         api = GeminiClient.createGeminiService(apiKey)
         repo = AiCoachRepository(api)
 
-        val send = findViewById<Button>(R.id.btnSend)
+        val send = findViewById<ImageButton>(R.id.btnSend)
         val input = findViewById<EditText>(R.id.etMessage)
         val chat = findViewById<LinearLayout>(R.id.chatContainer)
 

@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         binding?.flUserSettings?.setOnClickListener {
-            startActivity(Intent(this, UserPreferencesActivity::class.java))
+            startActivity(Intent(this, Userprofileactivity::class.java))
         }
         binding?.flChatbot?.setOnClickListener {
             val intent = Intent(this, Activity_Ai_Chat::class.java)

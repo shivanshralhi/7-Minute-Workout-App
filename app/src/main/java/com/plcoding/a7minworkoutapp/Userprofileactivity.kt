@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.plcoding.a7minworkoutapp.databinding.ActivityUserprofileactivityBinding
 
-class UserPreferencesActivity : AppCompatActivity() {
+class Userprofileactivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityUserprofileactivityBinding
     private lateinit var prefs: SharedPreferences

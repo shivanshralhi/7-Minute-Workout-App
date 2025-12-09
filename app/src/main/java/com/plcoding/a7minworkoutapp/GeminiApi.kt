@@ -1,10 +1,14 @@
 package com.plcoding.a7minworkoutapp
+
 import retrofit2.http.Body
-import retrofit2.http.Headers
 import retrofit2.http.POST
+import retrofit2.http.Url
 
 interface GeminiApi {
-    @Headers("Content-Type: application/json")
-    @POST("v1beta/models/gemini-1.5-flash:generateContent")
-    suspend fun getAIResponse(@Body request: GeminiRequest): GeminiResponse
+    // We use @Url to force the exact link, bypassing any path issues
+    @POST
+    suspend fun getAIResponse(
+        @Url url: String,
+        @Body request: GeminiRequest
+    ): GeminiResponse
 }
